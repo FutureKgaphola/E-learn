@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="10dp"
+                android:layout_below="@+id/distance"
+                android:background="#2596be"
+                android:backgroundTint="#2596be"
+                android:text="..."
+                android:id="@+id/limp"
+                app:cornerRadius="5dp"
+                tools:ignore="XmlNamespace" 
+                />
+
+</LinearLayout>

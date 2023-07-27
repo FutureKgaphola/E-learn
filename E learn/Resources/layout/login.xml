@@ -1,0 +1,156 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/girl" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:src="@mipmap/elearn"
+        android:layout_margin="5dp"/>
+
+    <!-- Gradient Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/card_view"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@android:color/black"
+            android:id="@+id/textInputLayout2"
+                
+              >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/username"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:drawableLeft="@drawable/ic_person_white_18dp"
+                android:drawableTint="@android:color/black"
+                android:hint="Email address"
+                android:textSize="15sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:passwordToggleEnabled="true"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            android:background="@android:color/white"
+            android:textColorHint="@android:color/black"
+            tools:ignore="XmlNamespace"
+                
+              >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/edtpassword"
+                android:password="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:hint="Password"
+                android:textSize="15sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset password"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:id="@+id/reset"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:padding="3dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingDimension">
+            
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/normallogin"
+                android:layout_weight="20"
+                app:icon="@drawable/ic_psychology_black_18dp"
+                android:drawableTint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:text="login"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:id="@+id/goregister"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</RelativeLayout>

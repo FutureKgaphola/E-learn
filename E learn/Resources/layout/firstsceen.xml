@@ -1,0 +1,83 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/girl" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:src="@mipmap/elearn"
+        android:layout_margin="5dp"/>
+
+    <!-- Gradient Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/card_view"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find the "
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="best learning"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:background="@drawable/orangecard"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="materials"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:padding="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/black"/>
+
+
+        
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/getstarted"
+            android:textColor="@android:color/black"
+            android:text="Get me started"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        >
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#2596be"
+        android:textStyle="bold"
+        android:text="New users get 30% off"/>
+
+        <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:textSize="8dp"
+                        android:layout_margin="2dp"
+                        android:text="get offer"
+            android:background="#2596be"
+            android:backgroundTint="#2596be"
+            android:textColor="@android:color/white"
+                        android:id="@+id/getoffer"
+                        app:cornerRadius="5dp"
+                        tools:ignore="XmlNamespace" 
+                        />
+
+        </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/card_view">
+        <!-- intro to pc -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/cardtransparent">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"
+            android:text="Introduction to computers"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Recyclerintro"/>
+
+
+            </LinearLayout>
+
+        <!-- front end dev -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/cardtransparent">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Frontend Development"
+                android:layout_marginLeft="5dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RecyclerFront"/>
+
+
+            </LinearLayout>
+
+        <!-- Backend development -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/cardtransparent">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Backend Development"
+                android:layout_marginLeft="5dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                />
+
+
+           <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RecyclerBack"/>
+
+            </LinearLayout>
+
+        <!-- Cyper Security -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/cardtransparent">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Cyper Security"
+                android:layout_marginLeft="5dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RecyclerCyber"/>
+
+            </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GirlTech Connect</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Hubs</string>
+    <string name="title_notifications">Exit</string>
+</resources>
